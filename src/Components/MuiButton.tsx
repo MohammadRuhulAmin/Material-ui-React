@@ -1,9 +1,28 @@
 import React from 'react'
-import {Stack,Button,IconButton,ButtonGroup} from '@mui/material'
+import {Stack,Button,IconButton,ButtonGroup,ToggleButton,ToggleButtonGroup} from '@mui/material'
 import SendIcon from '@mui/icons-material/Send';
+import FormatBoldIcon from '@mui/icons-material/FormatBold'
+import FormatItalicIcon from '@mui/icons-material/FormatItalic'
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined'
+
 const MuiButton = () => {
   return (
-      <div>
+      <Stack> 
+          <Stack direction ='row'>
+              <ToggleButtonGroup aria-label = 'text formating'>
+                <ToggleButton value = 'bold' aria-label = 'bold'>
+                    <FormatBoldIcon/>
+                </ToggleButton>
+                <ToggleButton value ='italic' aria-label='italic'>
+                    <FormatItalicIcon/>
+                </ToggleButton>
+                <ToggleButton value = 'underlined' aria-label = 'underlined'>
+                    <FormatUnderlinedIcon/>
+                </ToggleButton>
+
+              </ToggleButtonGroup>
+
+          </Stack>
         <Stack spacing={2} direction = 'row'>
             <Button variant='text' href='https://google.com'>Texed</Button>
             <Button variant = 'contained'>Contained</Button>
@@ -37,7 +56,7 @@ const MuiButton = () => {
         <IconButton color = 'success' size = 'small'  onClick={()=>alert('Md RUhul Amin')}>
             <SendIcon />
         </IconButton>
-      </div>
+      </Stack>
     
   )
 }
