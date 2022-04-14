@@ -16,10 +16,12 @@ import MuiLayout from './Components/MuiLayout';
 import MuiCard from './Components/MuiCard';
 import MuiAccordion from './Components/MuiAccordion';
 import PMuiAccordion from './Components/Practise/PMuiAccordion';
+import MuiImageList from './Components/MuiImageList';
 
 function App() {
   return (
     <div className="App">
+      <MuiImageList/>
       <PMuiAccordion/>
       <MuiCard/>
       {/* <MuiLayout/> */}
