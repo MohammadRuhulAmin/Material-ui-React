@@ -2,6 +2,7 @@ import React from 'react'
 import {TextField, Typography,MenuItem,Box} from '@mui/material'
 import {useState} from 'react'
 import MuiRadioButton from './MuiRadioButton'
+
 const MyForm = () => {
   const [name,setName] = useState('')
   const [email,setEmail] = useState('')
@@ -51,6 +52,7 @@ const MyForm = () => {
             </TextField>
             <MuiRadioButton/>
         </Box>
+      
         <Typography color = "info" variant = "body1">{name} :  {email} :  {country}</Typography>
     </div>
   )
