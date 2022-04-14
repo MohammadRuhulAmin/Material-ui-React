@@ -19,7 +19,6 @@ const MuiButton = () => {
                 <ToggleButton value = 'underlined' aria-label = 'underlined'>
                     <FormatUnderlinedIcon/>
                 </ToggleButton>
-
               </ToggleButtonGroup>
 
           </Stack>
