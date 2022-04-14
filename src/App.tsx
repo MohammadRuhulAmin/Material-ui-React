@@ -13,11 +13,13 @@ import PMuiTypography from './Components/Practise/PMuiTypography';
 import PTextField from './Components/Practise/PTextField';
 import MuiAutoComplete from './MuiAutoComplete';
 import MuiLayout from './Components/MuiLayout';
+import MuiCard from './Components/MuiCard';
 
 function App() {
   return (
     <div className="App">
-      <MuiLayout/>
+      <MuiCard/>
+      {/* <MuiLayout/> */}
       {/* <MuiAutoComplete/> */}
         {/* <MyForm/> */}
       {/* <PMuiSelect/> */}

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Stack} from "@mui/material"
+import {Box, Stack,Grid,Paper} from "@mui/material"
 const MuiLayout = () => {
   const  boxStyle = {
     backgroundColor : 'primary.main',
@@ -12,9 +12,9 @@ const MuiLayout = () => {
     }
   }
   return (
-  
-    <Stack sx = {{border:'1px solid'}} direction = 'row-reverse' spacing = {2}> 
-        <Box >
+    <Paper sx = {{padding:'32px'}} elevation = {10}>
+      <Stack sx = {{border:'1px solid'}} direction = 'row-reverse' spacing = {2}> 
+        <Box>
           <Box component = 'h1'>
               Md Ruhul Amin 
               ruhulamin.cs.dev@gmail.com
@@ -31,10 +31,25 @@ const MuiLayout = () => {
         bgcolor = 'success.light'
         p = {2}
       >
-
       </Box>
     
     </Stack>
+    <Grid container p = {4}>
+        <Grid item>
+          <Box bgcolor = 'primary.light' p = {2}>Item 1</Box>
+        </Grid>
+        <Grid item>
+          <Box bgcolor = 'error.light' p = {2}>Item 2</Box>
+        </Grid>
+        <Grid item>
+          <Box bgcolor = 'success.light' p = {2}>Item 3</Box>I
+        </Grid>
+        <Grid item>
+          <Box bgcolor = 'warning.light' p = {2}>Item 4</Box>
+        </Grid>
+    </Grid>
+    
+    </Paper>
   )
 }
 
