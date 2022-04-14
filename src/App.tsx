@@ -12,11 +12,13 @@ import PMuiSelect from './Components/Practise/PMuiSelect';
 import PMuiTypography from './Components/Practise/PMuiTypography';
 import PTextField from './Components/Practise/PTextField';
 import MuiAutoComplete from './MuiAutoComplete';
+import MuiLayout from './Components/MuiLayout';
 
 function App() {
   return (
     <div className="App">
-      <MuiAutoComplete/>
+      <MuiLayout/>
+      {/* <MuiAutoComplete/> */}
         {/* <MyForm/> */}
       {/* <PMuiSelect/> */}
       {/* <PMuiErrorState/>
