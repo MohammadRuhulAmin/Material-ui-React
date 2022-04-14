@@ -14,10 +14,13 @@ import PTextField from './Components/Practise/PTextField';
 import MuiAutoComplete from './MuiAutoComplete';
 import MuiLayout from './Components/MuiLayout';
 import MuiCard from './Components/MuiCard';
+import MuiAccordion from './Components/MuiAccordion';
+import PMuiAccordion from './Components/Practise/PMuiAccordion';
 
 function App() {
   return (
     <div className="App">
+      <PMuiAccordion/>
       <MuiCard/>
       {/* <MuiLayout/> */}
       {/* <MuiAutoComplete/> */}
