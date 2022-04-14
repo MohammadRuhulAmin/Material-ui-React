@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box} from "@mui/material"
+import {Box, Stack} from "@mui/material"
 const MuiLayout = () => {
   const  boxStyle = {
     backgroundColor : 'primary.main',
@@ -10,11 +10,10 @@ const MuiLayout = () => {
     '&:hover':{
       backgroundColor:'primary.light'
     }
-
   }
   return (
   
-    <>
+    <Stack sx = {{border:'1px solid'}} direction = 'row-reverse' spacing = {2}> 
         <Box >
           <Box component = 'h1'>
               Md Ruhul Amin 
@@ -35,7 +34,7 @@ const MuiLayout = () => {
 
       </Box>
     
-    </>
+    </Stack>
   )
 }
 
